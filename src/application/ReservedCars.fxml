@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="437.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ReservedCarsController">
+   <children>
+      <Label text="All Reserved Cars" AnchorPane.leftAnchor="333.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="CarsView" layoutX="142.0" layoutY="52.0" prefHeight="392.0" prefWidth="526.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="70.0">
+         <columns>
+            <TableColumn fx:id="Product_ID" prefWidth="105.0" text="Product ID" />
+            <TableColumn fx:id="VIN" prefWidth="105.0" text="VIN" />
+            <TableColumn fx:id="Color" prefWidth="105.0" text="Color" />
+            <TableColumn fx:id="Engine_Capacity" prefWidth="105.0" text="Engine_Capacity" />
+            <TableColumn fx:id="Transmission" prefWidth="105.0" text="Transmission" />
+            <TableColumn fx:id="Car_Type" prefWidth="105.0" text="Car Type" />
+            <TableColumn fx:id="Car_Brand" prefWidth="105.0" text="Car Brand" />
+            <TableColumn fx:id="Licenced" prefWidth="105.0" text="Licenced" />
+         </columns>
+      </TableView>
+      <HBox layoutX="19.0" layoutY="452.0" prefHeight="47.0" prefWidth="636.0">
+         <children>
+            <Button fx:id="Back" mnemonicParsing="false" onAction="#back" prefHeight="39.0" prefWidth="59.0" text="Back">
+               <HBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="EditBt" mnemonicParsing="false" prefHeight="35.0" prefWidth="59.0" text="Edit">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="225.0" right="50.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="SaveBt" mnemonicParsing="false" prefHeight="35.0" prefWidth="59.0" text="Save">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

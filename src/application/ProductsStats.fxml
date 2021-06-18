@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="400.0" minWidth="577.0" prefHeight="413.0" prefWidth="577.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ProductsStatsController">
+   <children>
+      <Label alignment="CENTER" layoutX="203.0" layoutY="14.0" prefHeight="54.0" prefWidth="129.0" text="Products Data" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label layoutX="62.0" layoutY="80.0" text="Most expensive product" />
+      <TextField fx:id="expensiveTF" editable="false" layoutX="337.0" layoutY="76.0" />
+      <Label layoutX="62.0" layoutY="220.0" text="Items currently in stock" />
+      <TextField fx:id="numInStock" editable="false" layoutX="338.0" layoutY="216.0" />
+      <Label layoutX="62.0" layoutY="142.0" text="Number of cars of brand" />
+      <TextField fx:id="numOfBrandsTF" editable="false" layoutX="338.0" layoutY="132.0" />
+      <RadioButton fx:id="hyundai" layoutX="249.0" layoutY="177.0" mnemonicParsing="false" onAction="#getHyundaiNum" selected="true" text="Hyundai">
+         <toggleGroup>
+            <ToggleGroup fx:id="brandRB" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="jeep" layoutX="120.0" layoutY="177.0" mnemonicParsing="false" onAction="#getJeepNum" text="Jeep" toggleGroup="$brandRB" />
+      <RadioButton fx:id="fiat" layoutX="375.0" layoutY="177.0" mnemonicParsing="false" onAction="#getFiatNum" text="Fiat" toggleGroup="$brandRB" />
+      <Label layoutX="62.0" layoutY="279.0" text="Average engine capacity" />
+      <TextField fx:id="avgCapacityTF" editable="false" layoutX="338.0" layoutY="275.0" />
+      <Label layoutX="62.0" layoutY="335.0" text="Average duration of promotions" />
+      <TextField fx:id="avgPromotionsDurationTF" editable="false" layoutX="338.0" layoutY="331.0" />
+      <Label layoutX="22.0" layoutY="177.0" text="select brand" />
+      <Button fx:id="backB" layoutX="29.0" layoutY="374.0" mnemonicParsing="false" onAction="#backToStatMain" prefHeight="26.0" prefWidth="57.0" text="Back" />
+   </children>
+</AnchorPane>

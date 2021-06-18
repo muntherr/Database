@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="895.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CarViewController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="456.0" prefWidth="901.0">
+         <children>
+            <Separator layoutX="10.0" layoutY="92.0" prefHeight="0.0" prefWidth="877.0" AnchorPane.topAnchor="270.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Separator>
+            <Separator layoutX="20.0" layoutY="102.0" prefHeight="0.0" prefWidth="877.0" AnchorPane.topAnchor="420.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Separator>
+            <GridPane layoutX="1.0" layoutY="90.0" prefHeight="355.0" prefWidth="901.0" AnchorPane.bottomAnchor="-20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="305.06219482421875" minWidth="10.0" prefWidth="271.7589111328125" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="350.6029052734375" minWidth="10.0" prefWidth="256.2410888671875" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="350.6029052734375" minWidth="10.0" prefWidth="256.2410888671875" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="178.0" minHeight="10.0" prefHeight="178.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="146.0" minHeight="10.0" prefHeight="134.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fx:id="Fimage" fitHeight="170.0" fitWidth="290.0" onMousePressed="#Hscene">
+                     <image>
+                        <Image url="@../../Resources/2018_fiat_124-spider_convertible_abarth_fq_oem_4_815-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="FiatCarBT" ellipsisString="" mnemonicParsing="false" onAction="#Fscene" style="-fx-background-color: Transparent;" text="Fiat spider" underline="true">
+                     <GridPane.margin>
+                        <Insets left="115.0" top="120.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="himage" fitHeight="152.0" fitWidth="295.0" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../../Resources/Hyundai1-removebg-preview.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets bottom="20.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <Button fx:id="HyndaiBt" ellipsisString="" mnemonicParsing="false" onAction="#Hscene" style="-fx-background-color: Transparent;" text="Hyundai" textAlignment="CENTER" underline="true" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets left="115.0" top="120.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="jeepimage" fitHeight="170.0" fitWidth="280.0" GridPane.columnIndex="2">
+                     <image>
+                        <Image url="@../../Resources/Jeep1-removebg-preview.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets bottom="20.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <Button fx:id="JeepBt" ellipsisString="" mnemonicParsing="false" onAction="#Jscene" style="-fx-background-color: Transparent;" text="Jeep" underline="true" GridPane.columnIndex="2">
+                     <GridPane.margin>
+                        <Insets left="115.0" top="120.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="seatimage" fitHeight="149.0" fitWidth="277.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../Resources/leon-02-removebg-preview.png" />
+                     </image>
+                     <GridPane.margin>
+                        <Insets bottom="20.0" />
+                     </GridPane.margin>
+                  </ImageView>
+                  <Button fx:id="SeatBt" ellipsisString="" mnemonicParsing="false" onAction="#Sscene" style="-fx-background-color: Transparent;" text="Seat Loen" textFill="#070707" underline="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="180.0" top="120.0" />
+                     </GridPane.margin>
+                  </Button>
+               </children>
+            </GridPane>
+            <Label layoutX="384.0" layoutY="33.0" text="Cars in Stock">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Separator layoutY="82.0" prefHeight="0.0" prefWidth="877.0" />
+            <Separator layoutX="295.0" layoutY="-53.0" orientation="VERTICAL" prefHeight="766.0" prefWidth="0.0" />
+            <Separator layoutX="598.0" layoutY="-15.0" orientation="VERTICAL" prefHeight="750.0" prefWidth="0.0" />
+            <Button fx:id="Back" layoutX="20.0" layoutY="34.0" mnemonicParsing="false" onAction="#back" text="Back" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

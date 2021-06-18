@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="437.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PsceneController">
+   <children>
+      <BorderPane layoutX="27.0" layoutY="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="389.0" prefWidth="600.0">
+         <top>
+            <AnchorPane prefHeight="442.0" prefWidth="607.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TabPane layoutX="-20.0" layoutY="-22.0" prefHeight="400.0" prefWidth="589.0" tabClosingPolicy="UNAVAILABLE">
+                     <tabs>
+                        <Tab text="Interior">
+                           <content>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <GridPane layoutX="1.0" prefHeight="363.0" prefWidth="591.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="174.0" minHeight="10.0" prefHeight="174.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="183.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="256.0" minHeight="10.0" prefHeight="192.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="171.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <ImageView fitHeight="187.0" fitWidth="309.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                             <image>
+                                                <Image url="@../../Resources/2021-06-06%2022.48.26.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fitHeight="186.0" fitWidth="376.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                                             <image>
+                                                <Image url="@../../Resources/2021-06-06%2022.49.03.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fitHeight="227.0" fitWidth="489.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                             <image>
+                                                <Image url="@../../Resources/2021-06-06%2022.48.57.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fitHeight="197.0" fitWidth="696.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../Resources/Peugeot3.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Spec And Price">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <GridPane layoutX="11.0" layoutY="29.0" prefHeight="348.0" prefWidth="589.0" AnchorPane.bottomAnchor="-6.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="29.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="303.0" minWidth="10.0" prefWidth="270.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="319.0" minWidth="10.0" prefWidth="319.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="98.0" minHeight="10.0" prefHeight="65.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="97.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="85.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="118.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="141.0" minHeight="10.0" prefHeight="119.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label text="Transsmission Type : Automatic">
+                                             <font>
+                                                <Font name="Cambria Bold" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Car type : Sedan" GridPane.rowIndex="2">
+                                             <font>
+                                                <Font name="Cambria Bold" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Lincensed :True" GridPane.rowIndex="3">
+                                             <font>
+                                                <Font name="Cambria Bold" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Engine Capacity:1250" GridPane.rowIndex="1">
+                                             <font>
+                                                <Font name="Cambria Bold" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="Price : 65000$" GridPane.rowIndex="4">
+                                             <font>
+                                                <Font name="Cambria Bold" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <ImageView fitHeight="240.0" fitWidth="321.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                             <image>
+                                                <Image url="@../../Resources/Peugeot1.jpg" />
+                                             </image>
+                                          </ImageView>
+                                          <TextArea prefHeight="158.0" prefWidth="319.0" style="-fx-background-color: Transparent;" text="Description: &#10;*panoramic sunroof&#10;*rims 16&quot;&#10;*touch screen&#10;*360 sensors&#10;*LED headlights&#10;" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                             <font>
+                                                <Font name="Cambria Italic" size="12.0" />
+                                             </font>
+                                          </TextArea>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab text="Reserve The car">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="367.0" prefWidth="605.0">
+                                 <children>
+                                    <GridPane prefHeight="338.0" prefWidth="570.0" AnchorPane.bottomAnchor="-12.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="41.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="464.0" minWidth="10.0" prefWidth="312.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="454.0" minWidth="10.0" prefWidth="258.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="66.0" minHeight="10.0" prefHeight="66.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="65.0" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label text="Customer name" />
+                                          <Label text="Start Date" GridPane.rowIndex="3" />
+                                          <Label text="Job Id" GridPane.rowIndex="2" />
+                                          <TextField fx:id="c_NAme">
+                                             <GridPane.margin>
+                                                <Insets left="100.0" right="50.0" />
+                                             </GridPane.margin>
+                                          </TextField>
+                                          <TextField fx:id="Jobid" GridPane.rowIndex="2">
+                                             <GridPane.margin>
+                                                <Insets left="100.0" right="50.0" />
+                                             </GridPane.margin>
+                                          </TextField>
+                                          <Button fx:id="save" mnemonicParsing="false" onAction="#Reserve" prefHeight="59.0" prefWidth="253.0" text="Reserve" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                          <TextField fx:id="dt" GridPane.rowIndex="3">
+                                             <GridPane.margin>
+                                                <Insets left="100.0" right="50.0" />
+                                             </GridPane.margin>
+                                          </TextField>
+                                          <Label text="End Date" GridPane.rowIndex="4" />
+                                          <TextField fx:id="ed" GridPane.rowIndex="4">
+                                             <GridPane.margin>
+                                                <Insets left="100.0" right="50.0" />
+                                             </GridPane.margin>
+                                          </TextField>
+                                          <Label text="Customer ID" GridPane.rowIndex="1" />
+                                          <TextField fx:id="CID" GridPane.rowIndex="1">
+                                             <GridPane.margin>
+                                                <Insets left="100.0" right="50.0" />
+                                             </GridPane.margin>
+                                          </TextField>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+      <Button fx:id="back" layoutX="244.0" layoutY="399.0" mnemonicParsing="false" onAction="#back" prefHeight="27.0" prefWidth="104.0" text="Back" />
+   </children>
+</AnchorPane>

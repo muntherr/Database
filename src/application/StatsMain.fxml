@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane minHeight="400.0" minWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="application.StatsMainController">
+   <children>
+      <Label layoutX="230.0" layoutY="90.0" text="choose a category">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="productsB" layoutX="235.0" layoutY="161.0" mnemonicParsing="false" onAction="#goToProducts" prefHeight="38.0" prefWidth="118.0" text="Products" />
+      <Button fx:id="salesmenB" layoutX="235.0" layoutY="229.0" mnemonicParsing="false" onAction="#goToSalesmen" prefHeight="38.0" prefWidth="118.0" text="Salesmen" />
+      <Button fx:id="customersB" layoutX="235.0" layoutY="294.0" mnemonicParsing="false" onAction="#goToCustomers" prefHeight="38.0" prefWidth="118.0" text="Customers" />
+      <Button fx:id="backB" layoutX="43.0" layoutY="354.0" mnemonicParsing="false" onAction="#backToManager" prefHeight="32.0" prefWidth="77.0" text="Back" />
+   </children>
+</AnchorPane>

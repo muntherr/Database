@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ReservationPane" prefHeight="378.0" prefWidth="505.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.NewReservationController">
+   <children>
+      <Separator layoutX="137.0" layoutY="3.0" maxWidth="1.7976931348623157E308" orientation="VERTICAL" prefHeight="372.0" prefWidth="5.0" />
+      <GridPane fx:id="PersonGrid" layoutX="152.0" layoutY="126.0" prefHeight="238.0" prefWidth="415.0" visible="false">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="349.0" minWidth="10.0" prefWidth="111.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="349.0" minWidth="10.0" prefWidth="174.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="203.0" minWidth="10.0" prefWidth="130.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Full Name">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label text="ID" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label text="Date of Birthday" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label GridPane.rowIndex="3" />
+            <TextField fx:id="Pnametxtf" promptText="Enter Your Name" GridPane.columnIndex="1" />
+            <TextField fx:id="idtxtf" promptText="Enter Your ID" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="dobtxtf" promptText="Enter your birthday" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Address" GridPane.rowIndex="3">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="phone" GridPane.rowIndex="4">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="incomcheck" mnemonicParsing="false" prefHeight="26.0" prefWidth="152.0" text="Income Proof" GridPane.rowIndex="5" />
+            <CheckBox fx:id="bankChek" mnemonicParsing="false" text="Bank Statment" GridPane.rowIndex="6" />
+            <TextField fx:id="Addresstxtf" promptText="Enter Your Address" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="phonetxtf" promptText="Enter Your number" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <GridPane fx:id="Companygrid" layoutX="152.0" layoutY="126.0" prefHeight="238.0" prefWidth="415.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="349.0" minWidth="10.0" prefWidth="111.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="349.0" minWidth="10.0" prefWidth="174.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="203.0" minWidth="10.0" prefWidth="130.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="Company Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label GridPane.rowIndex="3" />
+            <TextField fx:id="CnametxtF" promptText="Enter Your Name" GridPane.columnIndex="1" />
+            <Label text="Address" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="phone" GridPane.rowIndex="2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="Cincome" mnemonicParsing="false" text="Income Proof" GridPane.rowIndex="3" />
+            <CheckBox fx:id="CbankSt" mnemonicParsing="false" text="Bank Statment" GridPane.rowIndex="4" />
+            <TextField fx:id="AdressTxtf" promptText="Enter Your Address" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="Cphonetxtf" promptText="Enter Your number" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <VBox layoutX="14.0" layoutY="120.0" prefHeight="200.0" prefWidth="100.0" spacing="30.0">
+         <children>
+            <RadioButton fx:id="PersonR" mnemonicParsing="false" onAction="#PersonB" text="Person">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <toggleGroup>
+                  <ToggleGroup fx:id="ra" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="CompanyR" mnemonicParsing="false" onAction="#CompanyB" text="Company" toggleGroup="$ra">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </VBox>
+      <Separator layoutY="81.0" prefHeight="0.0" prefWidth="550.0" />
+      <Label layoutX="7.0" layoutY="14.0" prefHeight="55.0" prefWidth="136.0" text="New Reservation" AnchorPane.bottomAnchor="309.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="424.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="233.0" layoutY="14.0" prefHeight="55.0" prefWidth="188.0" text="Enter  your infotmation" textAlignment="CENTER" AnchorPane.bottomAnchor="309.0" AnchorPane.leftAnchor="233.0" AnchorPane.rightAnchor="129.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="Back" layoutX="14.0" layoutY="337.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <Button fx:id="Next" layoutX="498.0" layoutY="337.0" mnemonicParsing="false" onAction="#NextP" text="Next" />
+   </children>
+</AnchorPane>
